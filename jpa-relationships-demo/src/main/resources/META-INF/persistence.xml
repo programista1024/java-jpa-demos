@@ -12,8 +12,8 @@
          <!-- JPA 2.x -->
          <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
          <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/jpa_demo?serverTimezone=UTC" />
-         <property name="javax.persistence.jdbc.user" value="demo" />
-         <property name="javax.persistence.jdbc.password" value="demo" />
+         <property name="javax.persistence.jdbc.user" value="YOUR-USER-NAME" />
+         <property name="javax.persistence.jdbc.password" value="YOUR-PASSWORD" />
 
          <property name="use_sql_comments" value="true" />
          <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
