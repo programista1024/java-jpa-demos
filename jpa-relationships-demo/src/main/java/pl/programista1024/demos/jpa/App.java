@@ -18,7 +18,18 @@ public class App {
 		EntityManager entityManager = factory.createEntityManager();
 		entityManager.getTransaction().begin();
 		
+		Address address = new Address();
+		address.setAddressName("Wall Street");
+		address.setZipCode(111);
 		
+		Employee employee = new Employee();
+		employee.setEmployeeName("Joe Smith");
+		employee.setAddress(address);
+		
+		address.setEmployee(employee);
+		
+		entityManager.persist(employee);
+		entityManager.persist(address);
 		
 		entityManager.getTransaction().commit();
 		entityManager.close();
